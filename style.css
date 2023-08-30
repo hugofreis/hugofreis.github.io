@@ -1,40 +1,43 @@
 body {
-  margin:0px;
-  padding:0px;
-  background-color: rgb(114, 132, 168);
-  /* Cor da paleta: rgb(235, 210, 190) */
+  background-color: white;
+  /* Cores sugeridas para paleta: rgb(114, 132, 168), rgb(235, 210, 190) */
 
   font-family: Helvetica, sans-serif;
 }
 
-.container {
-  margin:13px; 
-  display:flex; /* Use flexbox para posicionar os elementos internos */
-  align-items: flex-start; /* Alinhar itens no topo */
+#logo {
+  position:fixed;
+  z-index: 2;
+  width:80%;
+  max-width: 800px;
 }
 
+#fundo {
+  position:fixed;
+  z-index:0;
+  width:100%;
+}
+
+#right-container {
+  position:relative;
+  left: calc(min(50%, 500px)); /* Whichever is smallest: 50% of the page or 500px*/
+  width: min(50%, 500px); 
+  padding-top: calc(min(21%, calc(0.6*377.877px))); 
+  margin-right:100px;
+}
+
+#photo-container {
+  position:relative;
+}
 #personal-photo {
-  width:50%;
-  border-style:solid;
-  border-color:black;
-  border-width:5px;
+  position:relative;
+  z-index: 3;
+  width:100%; /* This specification is necessary, or the image will grow beyond the containing element */
 }
 
-#caixas-direitas {
-  
-  margin-left:13px;
-  margin-top:1px;
-}
-
-#descricao {
-  padding: 10px;
-  background-color: whitesmoke;
-  margin-bottom:16px;
-}
-
-#link-para-o-linkedin {
-  padding: 10px 10px 10px 0px;
-  margin-bottom:0px;
-  color:white;
-}
-
+#caixa-de-texto {
+  z-index: 1;
+  text-align:justify;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 3px;
