@@ -1,6 +1,5 @@
     <div id="central-content">
-      <!-- <img id="background-img" src="./background.png"> -->
-
+  
       <img id="personal-photo" src="./personal-photo-round.png" alt="Hugo Freitas Reis in 2018">
       <div id="caixa-de-texto">
         
