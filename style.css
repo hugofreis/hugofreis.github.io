@@ -1,5 +1,6 @@
 body {
   font-family: Helvetica, sans-serif;
+  font-weight:lighter;
   margin:0px;
   padding:0px;
 }
@@ -78,19 +79,18 @@ article {
 
 #textbox {
   display:inline-grid;
-  background-color: rgba(235, 210, 190, 0.5);
-  padding:10px;
+  background-color: rgba(235, 210, 190, 0.6);
+  padding:15px;
   border-style: solid;
   border-style:black;
+  border-width:1px;
 }
 p {
   display:block;
   position:relative;
   text-align:justify;
-  padding-top:0px;
-  padding-bottom:10px;
   margin-top:0px;
-  margin-bottom:0px;
+  margin-bottom:10px;
   /* opacity:1; */
 
 }
