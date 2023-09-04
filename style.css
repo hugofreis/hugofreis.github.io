@@ -43,11 +43,6 @@ main {
   justify-content: center;
 }
 
-.middle-column {
-  width: 100%;
-  max-width: 560px;
-}
-
 #background-img {
   /* Default display value is inline */
   display:block;
@@ -55,12 +50,14 @@ main {
   top:0px; 
   z-index:0;
   width:100%;
+  max-width:450px;
 }
 
 article {
   position:relative;
   z-index:3;
-  /* Width values are set to match the background image by default, while becoming narrower if the page becomes too narrow, in order to allow all of the text to always show and be legible */
+  width: 100%;
+  max-width: 300px;
   display:flex;
   /* To make it so that elements in this flexbox are laid out vertically, rather than horizontally: */
   flex-direction:column;
@@ -74,16 +71,27 @@ article {
   width:200px;
   max-width:50%;
   padding-top:10px;
+  padding-bottom:10px;
   /* To center the image horizontally within its parent element*/
   margin:auto;
 }
 
-#texto {
+#textbox {
+  display:inline-grid;
+  background-color: rgba(235, 210, 190, 0.5);
+  padding:10px;
+  border-style: solid;
+  border-style:black;
+}
+p {
   display:block;
   position:relative;
   text-align:justify;
-  padding-left:40px;
-  padding-right:40px;
+  padding-top:0px;
+  padding-bottom:10px;
+  margin-top:0px;
+  margin-bottom:0px;
+  /* opacity:1; */
 
 }
 
