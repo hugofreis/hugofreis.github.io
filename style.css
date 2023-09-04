@@ -7,7 +7,7 @@ body {
 header {
   display: flex; 
   position:fixed;
-  z-index:2;
+  z-index:4;
   top:0px;
   left:0px;
   width: 100%;
@@ -16,7 +16,7 @@ header {
   justify-content: center;
 }
 
-#logo-background {
+#header-background {
   /* As an image, starts off as display:inline by default. */
   display:block;
   /* To allow the image to override the justify-content:center setting, which is intended for the logo only: */
@@ -27,13 +27,12 @@ header {
   height:100%;
 }
 
-#logo {
+#header-logo {
   /* The display is inline by default. This must be changed, lest the logo will be set to the right of the intended background */
   display:block;
   position:absolute;
   height:100%;
 }
-
 main {
   position:absolute;
   z-index: 0;
@@ -44,10 +43,29 @@ main {
   justify-content: center;
 }
 
+article {
+  position:absolute;
+  z-index:1;
+  /* Width values are set to match the background image by default, while becoming narrower if the page becomes too narrow, in order to allow all of the text to always show and be legible */
+  width: 100%;
+  max-width: 560px;
+  display:flex;
+  justify-content: center;
+}
+
 #background-img {
   /* Default display value is inline */
   display:block;
-  position:relative;
+  position:absolute;
+  z-index:2;
+  width:100%;
+}
+
+#texto {
+  display:block;
+  position:absolute;
+  z-index:3;
+  width: calc(100% - 20px - 20px); /* This replaces paddings on each side, because setting a padding property is incompatible with setting width as 100%;*/
 }
 
 
