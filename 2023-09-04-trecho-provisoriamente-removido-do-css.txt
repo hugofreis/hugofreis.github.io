@@ -17,13 +17,7 @@
 
 }
 
-#personal-photo {
-  position:fixed;
-  width: min(30%, 200px);
-  padding-left: 10px;
-  z-index: 3;
-  top: min(23%, 400px); 
-}
+
 
 #caixa-de-texto {
   position:relative;

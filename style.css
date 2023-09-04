@@ -43,29 +43,48 @@ main {
   justify-content: center;
 }
 
-article {
-  position:absolute;
-  z-index:1;
-  /* Width values are set to match the background image by default, while becoming narrower if the page becomes too narrow, in order to allow all of the text to always show and be legible */
+.middle-column {
   width: 100%;
   max-width: 560px;
-  display:flex;
-  justify-content: center;
 }
 
 #background-img {
   /* Default display value is inline */
   display:block;
   position:absolute;
-  z-index:2;
+  top:0px; 
+  z-index:0;
   width:100%;
+}
+
+article {
+  position:relative;
+  z-index:3;
+  /* Width values are set to match the background image by default, while becoming narrower if the page becomes too narrow, in order to allow all of the text to always show and be legible */
+  display:flex;
+  /* To make it so that elements in this flexbox are laid out vertically, rather than horizontally: */
+  flex-direction:column;
+  justify-content: center;
+}
+
+
+#personal-photo {
+  position: relative;
+  display: block;
+  width:200px;
+  max-width:50%;
+  padding-top:10px;
+  /* To center the image horizontally within its parent element*/
+  margin:auto;
 }
 
 #texto {
   display:block;
-  position:absolute;
-  z-index:3;
-  width: calc(100% - 20px - 20px); /* This replaces paddings on each side, because setting a padding property is incompatible with setting width as 100%;*/
+  position:relative;
+  text-align:justify;
+  padding-left:40px;
+  padding-right:40px;
+
 }
 
 
