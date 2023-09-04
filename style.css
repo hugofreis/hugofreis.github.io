@@ -1,43 +1,34 @@
 body {
-  background-color: white;
-  /* Cores sugeridas para paleta: rgb(114, 132, 168), rgb(235, 210, 190) */
-
   font-family: Helvetica, sans-serif;
+  margin:0px;
+  padding:0px;
+  background-color: pink;
 }
 
-#logo {
-  position:fixed;
-  z-index: 2;
-  width:80%;
-  max-width: 800px;
-}
-
-#fundo {
+header {
+  display: flex; 
   position:fixed;
   z-index:0;
-  width:100%;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: 273px;
+  max-height:25%;
+  justify-content: center;
+  background-color: green;
 }
 
-#right-container {
-  position:relative;
-  left: calc(min(50%, 500px)); /* Whichever is smallest: 50% of the page or 500px*/
-  width: min(50%, 500px); 
-  padding-top: calc(min(21%, calc(0.6*377.877px))); 
-  margin-right:100px;
+#logo-background {
+  /* As an image, starts off as display:inline by default
+  display:inline-block;
+  /* To allow the image to override the justify-content:center setting: */
+  position:absolute; 
+  left:0px; 
+  /* Width and height should take up the whole area allowed by the parent element */
+  width:100%; 
+  height:100%;
+  
 }
 
-#photo-container {
-  position:relative;
-}
-#personal-photo {
-  position:relative;
-  z-index: 3;
-  width:100%; /* This specification is necessary, or the image will grow beyond the containing element */
-}
 
-#caixa-de-texto {
-  z-index: 1;
-  text-align:justify;
-  padding-left: 13px;
-  padding-right: 13px;
-  padding-top: 3px;
+
