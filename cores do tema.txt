@@ -1,0 +1,5 @@
+Cores sugeridas para paleta: 
+
+rgb(114, 132, 168), 
+
+rgb(235, 210, 190)
