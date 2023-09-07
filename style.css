@@ -124,26 +124,46 @@ a:visited {
   background-color:rgba(255,255,255,0.5)
 }
 
-#works {
+#works-column {
   display:flex;
   flex-direction: column;
   font-weight: bold;
   justify-content: center;
 }
 
-h1 {
-  margin:auto;
-  font-size:inherit;
-  padding-bottom: 0px;
+.work {
+  display:flex;
+  flex-direction: row;
+  justify-content: right;
 }
 
 .work-description {
-  display:block;
-  margin:auto;
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  font-size:inherit;
+}
+
+.work-title {
+  font-size:inherit;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.work-paragraph {
   padding-top:5px;
   font-size:smaller;
   font-weight:lighter;
   font-stretch: condensed;
+}
+
+
+
+#miniatura-formulario {
+  height:70px;
+  width:70px;
+  margin-left:10px;
 }
 
 
