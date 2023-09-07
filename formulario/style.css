@@ -1,7 +1,8 @@
 body {
-  font-family: 'Roboto';
-  font-weight:lighter;
-  background-color: rgb(114, 132, 168);
+  font-family: 'EB Garamond';
+  font-size:18px;
+  font-weight: lighter;
+  background-color: rgba(110, 45, 45, 0.904);
   margin:0px;
   padding:0px;
   text-align: center;
@@ -14,13 +15,13 @@ h1 {
   padding-bottom:0px;
   text-align:center;
   font-family: 'Tangerine', cursive;
-  color:white;
+  color: rgb(255, 242, 231);
   font-size:200px;
   font-weight:lighter;
 }
 
 form {
-  text-align:left;
+  text-align:center;
 }
 #container {
   display:inline-block;
@@ -35,6 +36,11 @@ form {
   margin:0px;
 }
 
+
+.alinhar-a-direita {
+  text-align: right;
+  margin-right:70px;
+}
 #padding {
   width:100%;
   height:6px;
@@ -44,18 +50,18 @@ form {
   display:flex;
   justify-content: center;
 }
+
 footer {
-  position:absolute;
-  bottom:5px;
+  position:fixed;
+  bottom:0px;
+  margin-top:40px;
   height:30px;
   width:100%;
   display:flex;
   justify-content: center;
-  color:white;
-  font-weight: normal;
+  color:rgba(255,255,255,0.5);
+  font-family: 'Questrial', sans-serif;
+  font-stretch: condensed;
+  font-size: smaller;
 }
 
-.secondary-text {
-  font-family: sans-serif;
-  font-style: italic;
-}

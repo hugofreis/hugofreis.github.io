@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine|Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine|Roboto|Questrial|EB+Garamond">
     <title>2023-08-30-12h06</title>
   </head>
   <body>
@@ -14,26 +14,29 @@
         <p id="instrucao" class="secondary-text"><em>(Campos marcados com * são de preenchimento obrigatório)</em></p>
         <br><br>
       <form action="" method="GET">
+        <div class="alinhar-a-direita">
+          <label for="input-nome">Nome completo:*
+            <input type="text"; name="nome" id="input-nome" placeholder="Digite seu nome" required>
+          </label>    
+          <br><br>
 
-        <label for="input-nome">Nome completo:*
-          <input type="text"; name="nome" id="input-nome" placeholder="Digite seu nome" required>
-        </label>    
-        <br><br>
+            <!-- Obs.: o atributo autofocus faz com que o campo de e-mail já apareça pré-selecionado -->
+          <label for="input-email">E-mail:*
+            <input type="email" name="e-mail" id="input-email" placeholder="Digite seu e-mail" autocomplete="off" required autofocus>
+          </label>
+          <br><br>
 
-          <!-- Obs.: o atributo autofocus faz com que o campo de e-mail já apareça pré-selecionado -->
-        <label for="input-email">E-mail:*
-          <input type="email" name="e-mail" id="input-email" placeholder="Digite seu e-mail" autocomplete="off" required autofocus>
-        </label>
-        <br><br>
-
-        <label for="input-senha">Senha:* 
-          <input type="password" name="senha" id="input-senha" placeholder="Digite uma senha" required>
-        </label>
+          <label for="input-senha">Senha:* 
+            <input type="password" name="senha" id="input-senha" placeholder="Digite uma senha" required>
+          </label>
+        </div>
         <br><br><br>
 
-        <label>Imagem de perfil:
+        <label>Imagem de perfil –    
           <button type="image">Fazer upload
           </button>
+        </label>
+
         <br><br><br>
 
         <label>Sexo: 
@@ -42,17 +45,16 @@
         </label>
         <br><br><br>
 
-        <label for="select-escolaridade">Escolaridade:
-          <select name="escolaridade" id="select-escolaridade">
+        <label for="select-carne">Preferência da carne:
+          <select name="carne" id="select-carne">
             <option value="0">Selecione</option>
-            <option value="1I">Ensino fundamental incompleto</option>
-            <option value="1C">Ensino fundamental completo</option>
-            <option value="2I">Ensino médio incompleto</opton>
-            <option value="2C">Ensino médio completo</option>
-            <option value="3I">Ensino superior incompleto</option>
-            <option value="3C">Ensino superior completo</option>
-            <option value="4L">Pós-graduação <em>lato sensu</em></option>
-            <option value="4S">Mestrado ou doutorado</option>
+            <option value="B">Bleu</option>
+            <option value="M">Mal-passada</option>
+            <option value="PM">Ao ponto para mal-passada</option>
+            <option value="P">Ao ponto</opton>
+            <option value="PB">Ao ponto para bem-passada</option>
+            <option value="B">Bem-passada</option>
+
           </select>
         </label>
 
