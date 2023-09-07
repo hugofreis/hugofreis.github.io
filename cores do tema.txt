@@ -1,5 +1,8 @@
 Cores sugeridas para paleta: 
 
+azul:
+
 rgb(114, 132, 168), 
 
+bege:
 rgb(235, 210, 190)
